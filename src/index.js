@@ -3,6 +3,7 @@ import { homeButton, homeDisplay } from './home';
 import { menuButton } from './menu';
 import { contactButton } from './contact';
 import { mainContent } from './misc';
+import { footer } from './footer';
 
 const contentContainer = document.querySelector('#content');
 
@@ -13,6 +14,7 @@ const buttons = [homeButton, menuButton, contactButton];
 
 contentContainer.appendChild(options);
 contentContainer.appendChild(mainContent);
+contentContainer.appendChild(footer);
 
 for (const button of buttons) {
   options.appendChild(button);
